@@ -7,7 +7,8 @@ const bookController = {
   createBook: async (req, res) => {
     try {
       const { title, author, summary } = req.body;
-
+      console.log(req.body)
+      console.log(title, author, summary)
       // Fetch the current counter value and increment it
       const counter = await Counter.findOneAndUpdate(
         { name: "bookCount" },
