@@ -72,6 +72,27 @@ To set up and run the Books REST API locally, follow these steps:
 5. **Test the API:**
    - To test the API endpoints, run `npm run test` using Mocha and supertest. Ensure the API is running before testing.
 
+## Host on Render.com
+
+To host the Books REST API on Render.com, follow these steps:
+
+1. **Sign Up on Render.com:**
+   - If you don't already have an account, sign up for a Render.com account.
+
+2. **Create a New Web Service:**
+   - Log in to Render.com and click the "Add New" button to create a new web service.
+
+3. **Configure Your Service:**
+   - Choose a name for your service.
+   - Connect your GitHub repository or deploy manually from your local machine.
+
+4. **Add Environment Variables:**
+   - In your Render.com dashboard, navigate to your service's settings.
+   - Add environment variables, including the `MONGODB_URI` that you used locally.
+
+5. **Deploy Your Service:**
+   - Deploy your service on Render.com, and it will be accessible with a unique URL.
+
 ## Assumptions and Decisions
 
 - Custom Incremental `_id`: We implemented custom incremental `_id` values for books by managing a separate counter collection.
