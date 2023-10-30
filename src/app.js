@@ -33,6 +33,7 @@ async function updateCounter() {
 updateCounter();
 
 // Use routes
+app.use(express.json())
 app.use("/api/books", bookRoutes);
 
 // Start the server
