@@ -14,13 +14,13 @@ const bookController = {
         { $inc: { value: 1 } }
       );
       // Use the counter value as the custom _id for the new book
-      const newBook = new Book({
+      const book = new Book({
         _id: counter.value, // Custom _id
         title,
         author,
         summary,
       });
-      await newBook.save();
+      await book.save();
       res.status(201).json(book);
     } catch (error) {
       console.log(error);
