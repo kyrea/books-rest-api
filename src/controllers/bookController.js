@@ -1,4 +1,4 @@
-const Book = require('../models/');
+const Book = require('../models/Books');
 
 // Controller functions for CRUD operations
 const bookController = {
