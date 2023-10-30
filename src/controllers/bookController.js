@@ -19,6 +19,7 @@ const bookController = {
       await newBook.save();
       res.status(201).json(book);
     } catch (error) {
+      console.log(error)
       res.status(500).json({ error: 'Internal Server Error' });
     }
   },
@@ -29,6 +30,7 @@ const bookController = {
       const books = await Book.find();
       res.json(books);
     } catch (error) {
+      console.log(error)
       res.status(500).json({ error: 'Internal Server Error' });
     }
   },
@@ -42,6 +44,7 @@ const bookController = {
       }
       res.json(book);
     } catch (error) {
+      console.log(error)
       res.status(500).json({ error: 'Internal Server Error' });
     }
   },
@@ -56,6 +59,7 @@ const bookController = {
       }
       res.json(book);
     } catch (error) {
+      console.log(error)
       res.status(500).json({ error: 'Internal Server Error' });
     }
   },
@@ -69,6 +73,7 @@ const bookController = {
       }
       res.json({ message: 'Book deleted successfully' });
     } catch (error) {
+      console.log(error)
       res.status(500).json({ error: 'Internal Server Error' });
     }
   },
